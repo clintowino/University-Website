@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+   <section class="header" >
+    <nav>
+        <a href="index.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAArlBMVEX///8pf7gymNoAAACioqIoKCj///0kfbcsltn7/f0llNkberYAjdYAc7McktgVeLWBgYHp8PbP3+z1+PsPDw8dHR0Ab7Hi6/Mzg7qoxd1Ijb+4zuFcXFy1tbWNjY2/1eZYlcOIvOUAhdRwcHC+vr6rq6s9PT3KyspnnsiavNeBrdBCnttXpt682fCZmZnd3d1QUFAxMTFmZmaRtNSly+pvsuCXxenp6ekAaa8AYKoksYKjAAAPWklEQVR4nO1ciXaqyBbFqQARmVQQjODVKOAch/T7/x97pwAVkKlwSrLcva6mE4TanGnXqUKKeuONN95444033njjjTsAwX/3A6soCnvH8xFf/z6nQUiRVNno9/uGrErKfe9RYcjKPc6CJNmx+B6A53u81Zele5wVnzj2ngnFucdlJdnmeaESgOb4nm1KYK1bz3sxcIFzIUq1byWDKFZ1hTOTAFzPMm84M/IHD66rqrIsq+C5VL55DE0tf0n/soqpCXQlDjCPq5YOSOCiSLLpuLom8GB0zXbkfFPvenLZCwZXVRyOu6LigddMpaC3R88JaUmS+67W4wWOpukK/BN4zoXwzjoZouyecUs+gxvoctdmOVlHgIgsETiKbLh8T4ifjM6Ob6RYPfeGdAZcdnQqF2wcWyVlgxOj3ksyNs25mWxUXdBvygBOJYsL3E5LLZzV8HGsaro8n3JOmrOzAsfQaEG9IYPKekq8nMFZRWwTHKHIfYuPJ8YIHTcjbnYVunwGACez87jA3SzCBh8ARnF0Pj0CvVujGekng8H0+mUzAKL6WualAzZF4kZRzb7NpflXiI2VWkqQxVX48hlAyjcMZkNH2UimKWP9hjUpC9IUNJ1p7OxKjlFOJ9slEqFw/EMSt5TT/5LC0QpwuWKjupxu2e7OcUCW9p2da+sVvhATDM5KCgsFRK6L3YTGQpfc1XDEZMVqmA32tAtUWwDwJwhcUSL+nXFiAwGl0N/ZuuDLEJ6zXMcwVTJ3Q5ShFx0EsJFDH1TdShH/TIYQVpOQ/hzXBskTuh+gFgTd3vX7JJkNuQQjEnRDOZUIRElOkpwrBlo3Q1Yxd5bGYdUTPsKn45CQUa2CXuaB08JiRDFsuiSdmJ9BQjcc19KAkPdncGDNcokjxyiQl8NsKq7M+toe/1P7FleOjuCGhukZG2QpJoTFCAf+ZfpTQ6KUlq3KrkFzuqNersHKfbAOSeyfyNiJpUYxcWrWLzNnEjKsS+JlHjjaNqTgKp4OM3aWUDgpn8kkJmdIrlA0hSy5kwGpaGIOgeY01wjPccA/cFblBW/icjG1P4lJNn0kA4QBJZwvJWcQJVtl0istAB3sJp6z43+43vVx5dQq3Ln4CDStaZpuJZNJ0WcuXSkjNFmWpMpc0bGdoD9wjh9Jgpm+aRonmFjyyI6VdAk6IjZDfTpQijxxE8Dv9BURmSngaP3CxzfR1a2GcrizEy9Ba/3gGIgTVWLPH4X5iEY4OYPPAxeUNy3LoSMAH5AdiaoDSgfWJ2nK80KGUiOyRdIFm0DF4Pogq37XZ3cDF29MHFfRbWDUN0zcS5IkFeSzGShPLj1pB2TALKah4sp1djqbd0gkmWSYUuCku/Ly6jwsmgN5qOm6ZdkAy7J0SANQwzMrGCaDhy97nooQe44at5eS566tgijWdC41aUeemVMYAThgxQHS0vE1GcnZ+WORTroF5opcwfhHWOz2QwffiwwxMBnW8McCgzKlUAYoFP9wvNK3DSX0i1eSUV3X9EW4vJfZ85CkXREy+FO2LYcF3j1ipix0u++pIoTk0ZINZXWjQPxD4nB0V41qN+fGbFYanGDLfkJFy8U+Il+K5DIk29oueiDUGULRfC/ANC9wJuXI7FmydRNsFq3SV+K/valolqdC73D28mZEh9aIsJWNl3AELaG7foOcKY2ThwHY5bx1IFVibF8TNJO9vgFmSaFZEjRe8dFNJRiINKq2FjKRjyGkuOCkibpaTpS0D4Sg9X2JDNp0uWCa1SWJUbBfWqDYzUTHVEtMzm6hwu3OLQowC8M092R2oQzcVUnRO4VbgHehwrsnfeyZham2R2RtPnYHokkz027A8yQAx0Pco3O0MJjLgWjmglgb1OtVM/QC51lUerrpOxjWunvwsGq1vSCbH7M6B4rWTU/kz8nNHpWTVZC8aGIuzTlZ8Esah1vuGYeU62iQQThbxaveozamArYhC34Fr4dzWZsEUJleEyGV/yz54hnssdnGVMDJjoiADFK8SauWHjD4RpF3AcmpnK+GlvOmT4U0+ClPRNJ6Vo8T4QXRR1JxQ8ILmfNWQIUw+BHS8D2nK5kzavQ4QaPRvZ5zaXwipC7OVEiDn/KDAQyT7ZjqgzKA8B/uv1ysEqYCwX8kiReq/5/H5dKeSgH7kAwg/M9bZTsvTIHSZ7zaEhjmwBLIfiT9T/PJSHkfurV1dg2ux+8im4fUxb9mNQSmui/MBCMIaxz+Obh30ED+8sPUX/SAKf7iXxsTuIAwYnwnAzJ27qF3DRqOr0Sm5kCl+i/MI/Ayot0xveBua7lk7ldp8JJqNFIQ2ldbV1RwjSFZgDF6pwsUIHOXPgDMIQXdkcL5i1KOrSQqYJkRyaz/PH8sEDP3kGcwy6i4qk/Be0WIlQ//kqlUmTlR/PPnq2j53nnrBA13mW05chkW7efRBBYxzEImscyFTCVxy00UpCvOMSa01/G9qEZWkUfYv5LN4oUM0fzycqvpAhtrSydnuAmaHW3GsayynP9rpfE4hQwJQkFAWwkdpghQGT/zli18JudJF0KKIh/arWaqTcqEzMXNvE18OVqbXDl76y96zCbgXupx3kqNlEjIlCWDW2ZKxg5PitDPaJglabprRuIEM9kvIFKyjeKTIQsZKuo2nLCTlCwyBXZpnkzC0Zpm7eRI0UMnJvlESoQMFRsc3hqtSmy6eYr4GV3hOE0H5/IXuwIeeIc8MGm32gWpQMgsyZr+anyrEd3jbcNbLk9Enp/h9UrwLXtnxtZEPCatAoESMsxCJXzyw7naOEULPd5yTG+TaJwSyvYzvDyuWzsjWuJxmMhHQiZVXGWIN/m4dMLwaL7Ha7brr9mHIKf0z70V5Ipu2QGRiEnk5WhOzARPBY6kXCDdask3m+YEHj+6hN0GQ8O/ud617/GAGAEi/qaBczHBm2RUeb9gWm1iJlXsZWSzfx+mnbWFMli45xL2UHm7FDwebj/+/BfCRJYHMEnhgI+TIUzMgW2Uvq3j0WZEwxVDvC8Bb7bAPHyDnOYmlPeIEvjWolnOJAEYIvkfAmu6tk4L+Yx8FrRPwzGun5zDMSLvPSJF6mIGF8IeU9g6lGTsbFvXK95GEN+nThv0fD/Dm1zwDjfbdj0ap2Ut/+PoZJAjdq1CBT4bzcWNj8dJeBO0i/foQLyfoeOtOx6HnYP3qiaUIO+xTRMMwpSPkTgZ8sQcHZL/cRiXbBrezn380jcM/9GE8GEXseWZYwk8qq2bQiQG0ibTjcTZgAb4Vbt1a4RcgVQxEw7+9DgSfppS9liMFvMm0LiTX0XBHPJmV7eQYcMkFlVsjHbzfm4V51IlW2AiJ+NR2S+Xx2rOFPF2NOdErQxiNpcf2cWjuWAvexyVKPbpDZU7cSEXmaWhPNo0zPyBuSyO0Z0TcRzNxfO+AQKpcxIyXv4mSeDYy5723Q+IOhRPykxzMdpDaa0Wp/PgXBYnsyzsZ8x8JCsszJyXo2q76Geel8sw2EVBNsz8KHkLMAhJy4J546m6DONYLDszzdHpIVdgpB4KVVtmfuP3SRACKcVSQEwvqodCZA4PlDJJZApmZ+YYHZa6yM8cWJc9kwtAKuJn10Jenueyac6V51qGwoUzn0x7dNVGzJVCDO5kPJkMUvL9LCktKXlhw1SfKGVOZKhRvsMk9fHknLBhnihlLlBzS3ozaZM4OuYY5slFJhhVrqZpjxKcH0mZpmHm9/oWKyIgNW/VqJ04K8nJAYenh7+PHNOkeYySYRoc/i/hkhc1qR3WDNMwi9dQAYfJVo5pvS+Ubhqm+ZLw90alZm5KADKJtxmhVJnKVF8TMHhUVGZiSszMHqQUUcMwz2tkXCMzoaXvSEajFMMwL8nLJxwyZo/p+3iQnDKDODx18PFRSf9KkUGJCo1p3vIdXzcDZZnmWjNfsExKAcziiUNPRLppmhlklIQUwLSfr5djOKam5yzLJM1UmfnzRp0MhFITWhYZJF/5GdNMLktPxTKNTSaZ6xIFEfN6MlTalDPTza4FWuvlEUNhj/mXTCdrvyhCSoQMfuLviWNOBXhMsmlyNr/GSk3rpTXmjLTKmUMmWmrahNv+HgaUXDmbh6xn3hEbljRM65XfyR0GgsqZ4GlAJlPQjy6dZ6ZVdqfM/YH2SZUz74ER9aICoF7+iIihvAZ/omXydlmcSw3TyrbhkyEn5IA8Mui8ZNV65ZzsCqDpr5de8h6yQijws+bLRVkMyrWoYXJ2WSLqGDjZXb4T/25ASTkg78GEQAUwrR8gMGNA87ijFWgb75sM03762lIuEJKvTJPcng1/CBJae/9jsnII7CjOppUrUZBy/Hk+hhHTwVVvDpA3UvSiNnkukBzrPZM+yv+DgFDc0dJbmr8AKNZzeeiu0Ycj5mi/mwylHMMzm/Jb4H8GlEU7TOZlqy33AEKhScqrVo7vBza8Fa35o6Q9MfDz8BfT5EuAnw7l0t7IbgP+BiD1nAR+PxkIm5NII/2OtZ8IZd/8O2Twt3n9HTKU5CeBPxAzlPelcZhN7lTzd4AFNsyvVwABEJIPTOt3q+Yz8JOf+9HyL4SMD/R3qLzxxhtvvPHGG2+8QYj6HwLV+EOgan8IbzI/FW8yPxUnMh3x+3tV604vf9msxq8Y0C2gajD+Trc2/Z6O16I4gV81at7L5nNc6zZePLxCOA+SWk++B9PvtUhtatvN+lvcrGeT7gBexqux+PEKMtvP2rTu/zj98t/F2XCwCf4sDmLHd1arj3qn9l0bU5PGlN1Sje549j2BD20+xOlwtlptx5+ryee09gI0hl/byaA+nk5Ww9l49SnCWL+mnzN434iTsTgcT2uryUD8EFefH5+f3eFm2JjVVuvajBLBOtN1bTpobCb1r9lm3a19fdfhjmwm7McruIA9JoPhbDIbbhpi/Wv19bGabuqr4VgUxx/idvoxG9TE8XZT39Th1k8nDXCfcX0szoAMWEfZrmsbdttYr75m3Um9+zFZfdTqs9Xws/4SMtsJjHG7GoqDYX1QH8zgfTCcjIcQ0sPxuD4bT0XxazwBYwGRSRdsU6+J9e/Bmhp+z7qbGc5m61Vts/6cTuB9+rFebVZfX59x/3wKOoNhDW78dCVuxfF4OBh0wOm2MP7h9Gu1GWy+htPxajqtD8ZdsTtebWqfHx/dzrC2pTqNLs5mtU6j0anVul3IYPgdXrqdTrfzCjK1Dh4BHgD8BGODN/9H7wf84o3Y+wMkBBhyFxP4C0UzdL9/P5kQ3mR+Kt5kfir+D8tamJd5YQ0CAAAAAElFTkSuQmCC"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li> <a href="index.html"> HOME</a></li>
+                <li> <a href="about.html"> ABOUT</a></li>
+                <li> <a href="course.html"> COURSE</a></li>
+                <li> <a href="blog.html"> BLOG</a></li>
+                <li> <a href="contact.html"> CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+        <h1> World's Biggest University</h1>
+        <p>Making a website is now one of the easiest thing in the world. 
+            You just have to learn HTML,CSS,<br>and JavaScript and you are good
+            to go.
+        </p>
+        <a href="" class="hero-btn">Visit Us To Know More</a>
+    </div>
+
+   </section>
+
+   <section class="course">
+                <!-----Course-->
+        <h1> Courses we Offer</h1>
+        <p>We offer different courses to different groups of people in different 
+            countries
+        </p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate </h3>
+                <p> We offer different courses to different groups of people in different 
+                     countries</p>
+            </div>
+       
+            <div class="course-col">
+                <h3>Degree </h3>
+                <p> We offer different courses to different groups of people in different 
+                     countries</p>
+            </div>
+                <div class="course-col">
+                <h3>Post Graduate </h3>
+                <p> We offer different courses to different groups of people in different 
+                     countries</p>
+          
+        </div>
+   </section>
+
+              <!--------Campus----->
+
+   <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p>Our campus is available for every person across all borders</p>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="https://media.istockphoto.com/id/1347665170/photo/london-at-sunset.jpg?s=612x612&w=0&k=20&c=MdiIzSNKvP8Ct6fdgdV3J4FVcfsfzQjMb6swe2ybY6I=">
+                <div class="layer">
+                    <h3>LONDON</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="https://media.gettyimages.com/id/1485476626/photo/nairobi-cbd-skyline.jpg?s=612x612&w=gi&k=20&c=bisCfhJdUdaFYOy1HLzhNSNVU22Cw18LA0ucHYi6MzU=">
+                <div class="layer">
+                    <h3>NAIROBI</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="https://media.istockphoto.com/id/483099621/photo/cape-town-city-dowtown-business-district-south-africa.jpg?s=612x612&w=0&k=20&c=pETMIXkhlN5beXvvyWqhHqpIkaFk1vsJokX4v71HTKU=">
+                <div class="layer">
+                    <h3>SOUTH AFRICA</h3>
+                </div>
+            </div>
+        </div>
+
+        </div>
+   </section>
+
+
+                 <!-----------Facilities------->
+
+   <section class="facilities">
+        <h1> Our Facilities</h1>
+        <p> We have valuable and enough facilities to help our lerners get the best and quality education</p>
+     <div class="row">
+            <div class="facilities-col">
+                <img src="https://media.istockphoto.com/id/505551939/photo/library.jpg?s=612x612&w=0&k=20&c=lGwjpaVR2__plgaEeRiLZ0n1up16Zm3PW6zlR4paabI=">
+                <h3>World class Library</h3>
+                <p>We havea good library that can accomodate a huge number of 
+                    students with various resources that will help them in
+                    their studies in the university.
+                </p>  
+            </div>
+            <div class="facilities-col">
+                <img src="https://images.sidearmdev.com/convert?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgatorzone.com%2Fimages%2F2025%2F3%2F21%2F041_Martin_Alijah__250321_3494_MaddieWashburn.jpg&type=webp">
+                <h3>Basketball</h3>
+                <p>We have several games that te school participates in that makes students exercise
+                </p>  
+            </div>
+            <div class="facilities-col">
+                <img src="https://c8.alamy.com/comp/CRRPDW/african-american-male-student-sits-alone-at-table-during-lunch-in-CRRPDW.jpg">
+                <h3>Tasty and Healthy Food</h3>
+                <p>The school has a big cafeteria anough to feed students..the food is tasty and of quality..
+                </p>  
+            </div>
+        </div>
+
+    </section>
+
+               <!-------------Testimonials----------->
+   <section class="testimonials">
+        <h1>What Our Students Say</h1>
+        <p>Our students have different comments of their experiences</p>
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="https://media.istockphoto.com/id/1365601848/photo/portrait-of-a-young-woman-carrying-her-schoolbooks-outside-at-college.jpg?s=612x612&w=0&k=20&c=EVxLUZsL0ueYFF1Nixit6hg-DkiV52ddGw_orw9BSJA=">
+                <div>
+                    <p>Being a student here has been a truly transformative experience. The opportunities for growth — from clubs and events to internships and research — are endless</p>
+                    <h3>Stacy Kariuki</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="https://media.gettyimages.com/id/1438969575/photo/smiling-young-male-college-student-wearing-headphones-standing-in-a-classroom.jpg?s=612x612&w=gi&k=20&c=SpIONFFVzrC2OpgxeC2GEpUs0mDQxjw8xn9Z-gfGs5c=">
+                <div>
+                    <p>I’ve always felt seen, heard, and supported in this environment. The lecturers are approachable, the campus is vibrant, and the energy here is unmatched.</p>
+                    <h3>Clinton Owino</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-halfo"></i>
+                </div>
+            </div>
+        </div>
+   </section>
+
+
+         <!-------------Call To Action--------->
+
+<section class="cta">
+    <h1>Enroll For Our Varoius Online Courses,<br> Anywhere From The Wold</h1>
+    <a href="" class="hero-btn">CONTACT US</a>
+
+</section>
+
+
+
+<!------------Footer----------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>We are a vibrant academic community dedicated to nurturing talent, inspiring innovation, and driving positive change. With a focus on excellence in teaching, research, and student support, <br> empower learners to grow, lead, and make an impact in the world. Here, education goes beyond the classroom — it's a journey of discovery, purpose, and transformation</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Designed By Clinton Owino</p>
+</section>
+       
+   <script>
+
+        var navLinks = document.getElementbyId("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+
+   </script>
+</body>
+</html>
