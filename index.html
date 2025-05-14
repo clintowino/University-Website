@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
    <section class="header" >
@@ -148,7 +148,7 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
-                    <i class="fa fa-star-halfo"></i>
+                    <i class="fa fa-star-half-o"></i>
                 </div>
             </div>
         </div>
@@ -176,20 +176,22 @@
             <i class="fa fa-instagram"></i>
             <i class="fa fa-linkedin"></i>
         </div>
-        <p>Designed By Clinton Owino</p>
+        <p>Made with <i class="fa fa-heart"></i> by Clinton Owino</p>
 </section>
        
    <script>
+  const navLinks = document.getElementById('navLinks');
+  const menuIcon = document.querySelector('.fa-bars');
+  const closeIcon = document.querySelector('.fa-times');
 
-        var navLinks = document.getElementbyId("navLinks");
-        function showMenu(){
-            navLinks.style.right = "0";
-        }
+  menuIcon.addEventListener('click', () => {
+    navLinks.style.right = '0';
+  });
 
-        function hideMenu(){
-            navlinks.style.right = "-200px";
-        }
+  closeIcon.addEventListener('click', () => {
+    navLinks.style.right = '-200px';
+  });
+</script>
 
-   </script>
 </body>
 </html>
